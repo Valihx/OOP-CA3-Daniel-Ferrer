@@ -2,8 +2,8 @@ import java.util.Scanner;
 import java.util.Stack;
 
 /**
- *  Name:
- *  Class Group:
+ *  Name: Daniel Ferrer
+ *  Class Group: GD2A
  */
 public class CA3_Question2
 {
@@ -21,7 +21,7 @@ public class CA3_Question2
                 arr[x][y] = 0;
             }
         }
-       return arr;
+        return arr;
     }
     /*
         Helper function to display the image
@@ -44,7 +44,7 @@ public class CA3_Question2
 
     public static void start()
     {
-       int[][] arr = floodFillStart();
+        int[][] arr = floodFillStart();
     }
     public static void main(String[] args) {
         start();
