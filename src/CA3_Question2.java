@@ -37,8 +37,11 @@ public class CA3_Question2
             System.out.println();
         }
     }
-    private static void fill(int r, int c, int[][] arr)
+    private static void fill(int row, int column, int[][] arr)
     {
+        Stack<Pair> parameters = new Stack<>();
+        parameters.push(new Pair(row,column));
+        int count = 1;
 
     }
 
