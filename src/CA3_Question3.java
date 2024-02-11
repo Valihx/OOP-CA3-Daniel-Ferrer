@@ -1,6 +1,7 @@
 import java.io.FileNotFoundException;
 import java.util.*;
 import java.io.File;
+import java.util.ArrayList;
 
 
 /**
@@ -31,6 +32,21 @@ public class CA3_Question3
                 identifiers.get(identifier).add(String.valueOf(lnCount));
             }
         }
+        for (Map.Entry<String, ArrayList<String>> entry : identifiers.entrySet())
+        {
+            System.out.print(entry.getKey() + " - ");
+            ArrayList<String> lineNumbers = entry.getValue();
+            for (int i = 0; i < lineNumbers.size(); i++)
+            {
+                System.out.print(lineNumbers.get(i));
+                if (i < lineNumbers.size() - 1)
+                {
+                    System.out.print(", ");
+                }
+            }
+            System.out.println("\n");
+        }
+
     }
 
     public static void main(String[] args) throws FileNotFoundException {

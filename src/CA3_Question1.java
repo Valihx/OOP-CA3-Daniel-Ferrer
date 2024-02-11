@@ -26,7 +26,6 @@ public class CA3_Question1
                 break;
             }
             else if (userChoice > 0) {
-                //check for availability and add if its not taken
                 if (driveway.search(userChoice) == -1) {
                     driveway.push(userChoice);
                     System.out.println("Your driveway is now looking like this: "+driveway);
@@ -37,7 +36,6 @@ public class CA3_Question1
                 }
             }
             else if(userChoice < 0) {
-                //sending everything to a method, looks to messy here
                 removeCar(driveway,street,userChoice);
                 System.out.println("the current state of your driveway is: "+driveway);
                 System.out.println("the current state of the street is: "+street);
