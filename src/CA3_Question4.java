@@ -1,3 +1,4 @@
+import javax.swing.*;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
@@ -11,9 +12,32 @@ public class CA3_Question4 {
     /*
         filename: name of the file to test.
      */
-    public static boolean validate(String filename) throws FileNotFoundException
-    {
-        return false;
+    public static boolean validate(String filename) throws FileNotFoundException{
+
+        Scanner sc = new Scanner(new File(filename));
+        Stack<String> tags = new Stack<>();
+        boolean valid=false;
+
+        while(sc.hasNext())
+        {
+            String tag = sc.next();
+            if(!tag.startsWith("</")){
+                tags.push(tag);
+            }
+
+            if(!tag.isEmpty() && tag.substring(2).equals(tags.peek().substring(1))){
+                tags.pop();
+            }
+
+            if(tags.isEmpty()){
+                valid = true;
+            }
+            else{
+                valid=false;
+            }
+
+        }
+        return valid;
     }
 
     /*
