@@ -32,6 +32,8 @@ public class CA3_Question3
                 identifiers.get(identifier).add(String.valueOf(lnCount));
             }
         }
+
+        //display
         for (Map.Entry<String, ArrayList<String>> entry : identifiers.entrySet())
         {
             System.out.print(entry.getKey() + " - ");
@@ -41,10 +43,10 @@ public class CA3_Question3
                 System.out.print(lineNumbers.get(i));
                 if (i < lineNumbers.size() - 1)
                 {
-                    System.out.print(", ");
+                    System.out.print(",");
                 }
             }
-            System.out.println("\n");
+            System.out.printf("\n");
         }
 
     }
