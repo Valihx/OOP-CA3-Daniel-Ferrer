@@ -15,7 +15,7 @@ public class CA3_Question2
 
      */
     public static int[][]  floodFillStart() {
-        Scanner kb = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         int[][] arr = new int[10][10];
         for (int x = 0; x < 10; x++)
         {

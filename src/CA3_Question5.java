@@ -1,6 +1,6 @@
 /**
- *  Name:
- *  Class Group:
+ *  Name: Daniel Ferrer
+ *  Class Group: GD2A
  */
 
 public class CA3_Question5
