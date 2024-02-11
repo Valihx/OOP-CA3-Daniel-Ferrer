@@ -3,8 +3,8 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 import java.util.Stack;
 /**
- *  Name:
- *  Class Group:
+ *  Name: Daniel Ferrer
+ *  Class Group: GD2A
  */
 public class CA3_Question4 {
 

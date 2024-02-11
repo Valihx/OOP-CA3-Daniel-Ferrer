@@ -37,16 +37,16 @@ public class CA3_Question3
         for (Map.Entry<String, ArrayList<String>> entry : identifiers.entrySet())
         {
             System.out.print(entry.getKey() + " - ");
-            ArrayList<String> lineNumbers = entry.getValue();
-            for (int i = 0; i < lineNumbers.size(); i++)
+            ArrayList<String> ln = entry.getValue();
+            for (int i = 0; i < ln.size(); i++)
             {
-                System.out.print(lineNumbers.get(i));
-                if (i < lineNumbers.size() - 1)
+                System.out.print(ln.get(i));
+                if (i < ln.size() - 1)
                 {
                     System.out.print(",");
                 }
             }
-            System.out.printf("\n");
+            System.out.printf("\n" );
         }
 
     }
